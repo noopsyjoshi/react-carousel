@@ -8,6 +8,12 @@ import Home from './components/Home';
 // Styles
 import './scss/style.scss';
 
+// import 'slick-carousel/slick/slick.css';
+// import 'slick-carousel/slick/slick-theme.css';
+
+import '../node_modules/slick-carousel/slick/slick.scss';
+import '../node_modules/slick-carousel/slick/slick-theme.scss';
+
 class App extends React.Component {
   render() {
     return (

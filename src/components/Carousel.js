@@ -4,39 +4,36 @@ import Slider from 'react-slick';
 class Carousel extends React.Component {
   render() {
     const settings = {
+      className: 'center',
       centerMode: true,
       infinite: true,
+      centerPadding: 0,
       slidesToShow: 3,
-      autoplay: true,
-      speed: 500
+      speed: 500,
+      autoplay: true
     };
     return (
+
       <Slider {...settings}>
-        <div className="card">
-          <img src="../assets/turtle.png" />
-          <div className="card-text">
-            <h2>Cuba</h2>
-            <h3>Bahamas & Caribbean</h3>
-            <h4>View Itinerary</h4>
-          </div>
+        <div>
+          <div className="card">1</div>
         </div>
-        <div className="card">
-          <img src="../assets/turtle.png" />
-          <div className="card-text">
-            <h2>Florida</h2>
-            <h3>Bahamas & Caribbean</h3>
-            <h4>View Itinerary</h4>
-          </div>
+        <div>
+          <div className="card">2</div>
         </div>
-        <div className="card">
-          <img src="../assets/turtle.png" />
-          <div className="card-text">
-            <h2>Croatia</h2>
-            <h3>Mediteranean</h3>
-            <h4>View Itinerary</h4>
-          </div>
-        </div>
-      </Slider>
+        <div>
+        <div className="card">3</div>
+      </div>
+      <div>
+        <div className="card">4</div>
+      </div>
+      <div>
+      <div className="card">5</div>
+      </div>
+      <div>
+        <div className="card">6</div>
+      </div>
+    </Slider>
     );
   }
 }

@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  // Style for 'our chartered destinations'
+  font-family: 'Source Code Pro', monospace;
+  width: 461px;
+  height: 48px;
+  color: #121730;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 48px;
+  text-transform: lowercase;
+  letter-spacing: 3px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
+
+.slick-slider {
+  height: 500px;
+  margin-top: 30px;
+}
+
+.slick-slider .slick-track, .slick-slider .slick-list {
+  height: 500px;
+}
+
+.slick-slide.slick-center .card {
+  // -webkit-transform: translate(50px, 100px); /* Safari */
+  transform: scale(1.4, 1.4);
+  background-color: pink;
+}
+
+.slick-slide .slick-center .card {
+  margin: 0 auto;
+}
