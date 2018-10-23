@@ -3,6 +3,17 @@
   padding: 0;
 }
 
+section {
+  text-align: center;
+  // display: flex;
+  // flex-direction: column;
+  background-color: aliceblue;
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+}
+
 h1 {
   // Style for 'our chartered destinations'
   font-family: 'Source Code Pro', monospace;
@@ -15,29 +26,111 @@ h1 {
   text-transform: lowercase;
   letter-spacing: 3px;
   margin: 0 auto;
+  padding: 50px 0 50px 0;
+}
+
+h2 {
+color: #ffffff;
+font-size: 32px;
+font-weight: 300;
+line-height: 32px;
+text-transform: uppercase;
+/* Text style for "CUBA" */
+letter-spacing: 4px;
+padding: 10px 0 30px 0;
+}
+
+h3 {
+  /* Style for "Bahamas &" */
+color: #ffffff;
+font-size: 14px;
+font-weight: 300;
+line-height: 32px;
+text-transform: uppercase;
+/* Text style for "Bahamas &" */
+letter-spacing: 4px;
+}
+
+h4 {
+color: #ffffff;
+font-style: italic;
+font-size: 16px;
+line-height: 28px;
+/* Text style for "View Itine" */
+letter-spacing: 1px;
 }
 
 .card {
-  width: 200px;
-  height: 200px;
+  width: 368px;
+  height: 368px;
   background-color: blue;
+  position: relative;
+}
+
+.slick-initialized .slick-slide {
+    // display: block;
+    // height: 368px;
+    // width: 368px !important;
+    // padding: 40px;
+}
+
+.card img {
+  width: 368px;
+  height: 368px;
+}
+
+.card-text-top {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+
+.card-text-bottom {
+    position: absolute;
+    top: 80%;
+    width: 100%;
 }
 
 .slick-slider {
-  height: 500px;
-  margin-top: 30px;
+
 }
 
-.slick-slider .slick-track, .slick-slider .slick-list {
-  height: 500px;
-}
+// contains all the slides
+.slick-track {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
 
+// the center card
 .slick-slide.slick-center .card {
-  // -webkit-transform: translate(50px, 100px); /* Safari */
-  transform: scale(1.4, 1.4);
-  background-color: pink;
+    background-color: yellow;
+    box-sizing: border-box;
+    width: 500px !important;
+    height: 500px !important;
 }
 
-.slick-slide .slick-center .card {
-  margin: 0 auto;
+.slick-slide.slick-center .card img {
+    background-color: yellow;
+    box-sizing: border-box;
+    width: 500px !important;
+    height: 500px !important;
+}
+
+.slick-slide.slick-active {
+    // width: 368px !important;
+}
+
+.viewAllDestinationsLink {
+    margin: 0 auto;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    width: 256px;
+    /* height: 80px; */
+    border: 1px solid #e7e7ea;
+    padding: 1.2rem;
+    text-decoration: none;
+    color: black;
+    margin-top: 80px;
 }

@@ -9,7 +9,7 @@ class Home extends React.Component {
       <section>
         <h1>Our Charter Destinations</h1>
         <Carousel />
-        <button>View all destinations</button>
+        <a href="#" className="viewAllDestinationsLink">View all destinations</a>
       </section>
     );
   }
