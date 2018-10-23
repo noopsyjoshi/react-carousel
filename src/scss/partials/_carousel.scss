@@ -1,0 +1,106 @@
+
+section {
+
+  .slick-slider {
+    padding-bottom: 100px;
+
+    .slick-list {
+
+      .slick-track {
+        padding: 60px 0 60px 0;
+        // contains all the slides
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: no-wrap;
+
+        .slick-slide {
+          text-align: center;
+          margin: 20px;
+
+          .slick-active {
+
+            .slick-center {
+
+              .slick-current {
+                transform: scale(1.2) !important;
+              }
+
+              .card {
+                img {
+                  box-sizing: border-box;
+                  max-width: 500px;
+                  width: 100%;
+                  max-height: 500px;
+                  height: 100%;
+                  margin-left: auto;
+                  margin-right: auto;
+
+                }
+              }
+            }
+          }
+
+          div {
+
+            .card {
+              text-align: center;
+              height: 368px;
+              width: 368px !important;
+              position: relative;
+              img {
+                max-width: 368px;
+                max-height: 368px;
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                z-index: 2;
+                position: absolute;
+              }
+              .card-front {
+                max-width: 300px;
+                max-height: 300px;
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                z-index: 2;
+                position: absolute;
+                margin-top: 34px;
+                margin-left: 34px;
+                border: 1px solid #fff;
+                background-color: #fff;
+                img {
+                  opacity: 0.8;
+                }
+
+                .card-text-top {
+                  position: absolute;
+                  top: 40%;
+                  width: 100%;
+                  z-index:1000;
+                  h2 {}
+                  h3 {}
+                }
+
+                .card-text-bottom{
+                  position: absolute;
+                  top: 80%;
+                  width: 100%;
+                  z-index: 1000;
+                  h4 {}
+                }
+
+              }
+            }
+          }
+        }
+      }
+
+      .slick-dots {
+        margin-bottom: 80px !important
+      }
+
+    }
+
+  }
+}

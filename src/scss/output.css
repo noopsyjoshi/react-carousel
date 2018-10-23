@@ -1,0 +1,158 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1 {
+  font-family: 'Source Code Pro', monospace;
+  color: #121730;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 48px;
+  text-transform: lowercase;
+  letter-spacing: 3px;
+  margin: 0 auto;
+  padding: 50px 0 60px 0; }
+
+h2 {
+  /* Text style for "CUBA" */
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 32px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 10px 0 30px 0; }
+
+h3 {
+  /* Style for "Bahamas &" */
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 32px;
+  text-transform: uppercase;
+  letter-spacing: 4px; }
+
+h4 {
+  /* Text style for "View Itine" */
+  color: #ffffff;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 1px; }
+
+section .slick-slider {
+  padding-bottom: 100px; }
+  section .slick-slider .slick-list .slick-track {
+    padding: 60px 0 60px 0;
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: no-wrap; }
+    section .slick-slider .slick-list .slick-track .slick-slide {
+      text-align: center;
+      margin: 20px; }
+      section .slick-slider .slick-list .slick-track .slick-slide .slick-active .slick-center .slick-current {
+        transform: scale(1.2) !important; }
+      section .slick-slider .slick-list .slick-track .slick-slide .slick-active .slick-center .card img {
+        box-sizing: border-box;
+        max-width: 500px;
+        width: 100%;
+        max-height: 500px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto; }
+      section .slick-slider .slick-list .slick-track .slick-slide div .card {
+        text-align: center;
+        height: 368px;
+        width: 368px !important;
+        position: relative; }
+        section .slick-slider .slick-list .slick-track .slick-slide div .card img {
+          max-width: 368px;
+          max-height: 368px;
+          width: 100%;
+          height: 100%;
+          margin: 0 auto;
+          z-index: 2;
+          position: absolute; }
+        section .slick-slider .slick-list .slick-track .slick-slide div .card .card-front {
+          max-width: 300px;
+          max-height: 300px;
+          width: 100%;
+          height: 100%;
+          margin: 0 auto;
+          z-index: 2;
+          position: absolute;
+          margin-top: 34px;
+          margin-left: 34px;
+          border: 1px solid #fff;
+          background-color: #fff; }
+          section .slick-slider .slick-list .slick-track .slick-slide div .card .card-front img {
+            opacity: 0.8; }
+          section .slick-slider .slick-list .slick-track .slick-slide div .card .card-front .card-text-top {
+            position: absolute;
+            top: 40%;
+            width: 100%;
+            z-index: 1000; }
+          section .slick-slider .slick-list .slick-track .slick-slide div .card .card-front .card-text-bottom {
+            position: absolute;
+            top: 80%;
+            width: 100%;
+            z-index: 1000; }
+  section .slick-slider .slick-list .slick-dots {
+    margin-bottom: 80px !important; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Source Code Pro', monospace; }
+  body section {
+    text-align: center; }
+    body section .slick-slide.slick-active.slick-center {
+      transform: scale(1.2); }
+    body section .viewAllDestinationsLink {
+      margin: 0 auto;
+      font-style: italic;
+      letter-spacing: 0.5px;
+      width: 256px;
+      border: 1px solid #e7e7ea;
+      padding: 1.2rem;
+      text-decoration: none;
+      color: black;
+      margin-top: 80px; }
+
+/*# sourceMappingURL=output.css.map */

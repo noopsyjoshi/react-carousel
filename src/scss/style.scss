@@ -1,199 +1,32 @@
+@import './partials/_reset.scss';
+@import './partials/_typography.scss';
+@import './partials/_carousel.scss';
+
 * {
   margin: 0;
   padding: 0;
 }
 
-section {
-  text-align: center;
-}
-
 body {
   font-family: 'Source Code Pro', monospace;
-}
 
-h1 {
-  // Style for 'our chartered destinations'
-  font-family: 'Source Code Pro', monospace;
-  width: 461px;
-  height: 48px;
-  color: #121730;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 48px;
-  text-transform: lowercase;
-  letter-spacing: 3px;
-  margin: 0 auto;
-  padding: 50px 0 50px 0;
-}
-
-h2 {
-  color: #ffffff;
-  font-size: 32px;
-  font-weight: 300;
-  line-height: 32px;
-  text-transform: uppercase;
-  /* Text style for "CUBA" */
-  letter-spacing: 4px;
-  padding: 10px 0 30px 0;
-}
-
-h3 {
-  /* Style for "Bahamas &" */
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 32px;
-  text-transform: uppercase;
-  /* Text style for "Bahamas &" */
-  letter-spacing: 4px;
-}
-
-h4 {
-  color: #ffffff;
-  font-style: italic;
-  font-size: 16px;
-  line-height: 28px;
-  /* Text style for "View Itine" */
-  letter-spacing: 1px;
-}
-
-.slick-slide {
-  text-align: center;
-  margin: 20px;
-}
-
-.card {
+  section {
     text-align: center;
-    height: 368px;
-    width: 368px !important;
-    position: relative;
-}
 
-.card-front {
-    max-width: 300px;
-    max-height: 300px;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    z-index: 2;
-    position: absolute;
-    margin-top: 34px;
-    margin-left: 34px;
-    border: 1px solid #fff;
-    background-color: #fff;
-}
+    .slick-slide.slick-active.slick-center {
+        transform: scale(1.2);
+    }
 
-.card-front img {
-    opacity: 0.8;
-}
-
-.card-text-top {
-  position: absolute;
-  top: 40%;
-  width: 100%;
-  z-index:1000;
-}
-
-.card-text-bottom {
-    position: absolute;
-    top: 80%;
-    width: 100%;
-    z-index: 1000;
-}
-
-.slick-slide .card img {
-    max-width: 368px;
-    max-height: 368px;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    z-index: 2;
-    position: absolute;
-}
-
-
-.slick-slide .card img {
-  // max-width: 368px;
-  // max-height: 368px;
-  // width: 100%;
-  // height: 100%;
-  // margin: 0 auto;
-}
-
-
-.card-text-bottom {
-  position: absolute;
-  top: 80%;
-  width: 100%;
-}
-
-.slick-slider {
-  padding-bottom: 100px;
-}
-
-// contains all the slides
-.slick-track {
-  display: flex !important;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: no-wrap;
-}
-
-.card {
-  text-align: center;
-}
-
-// the center card
-.slick-slide .slick-center .card img {
-  box-sizing: border-box;
-  max-width: 500px;
-  width: 100%;
-  max-height: 500px;
-  height: 100%;
-}
-
-.slick-slide.slick-active.slick-center {
-    transform: scale(1.2);
-}
-
-.nextArrow {
-  width: 100px;
-  height: 100px;
-  background-color: purple;
-}
-
-.prevArrow {
-  width: 100px;
-  height: 100px;
-  background-color: yellow;
-}
-
-// .slick-list {
-//   padding:0 20% 0 0;
-// }
-
-.slick-slide .slick-center .card img {
-  // box-sizing: border-box;
-  // max-height: 500px;
-  // max-width: 500px;
-  // height: 100px;
-  // width: 100%;
-}
-
-.slick-slide.slick-active {
-  // width: 368px !important;
-}
-
-.viewAllDestinationsLink {
-  margin: 0 auto;
-  font-style: italic;
-  letter-spacing: 0.5px;
-  width: 256px;
-  /* height: 80px; */
-  border: 1px solid #e7e7ea;
-  padding: 1.2rem;
-  text-decoration: none;
-  color: black;
-  margin-top: 80px;
+    .viewAllDestinationsLink {
+      margin: 0 auto;
+      font-style: italic;
+      letter-spacing: 0.5px;
+      width: 256px;
+      border: 1px solid #e7e7ea;
+      padding: 1.2rem;
+      text-decoration: none;
+      color: black;
+      margin-top: 80px;
+    }
+  }
 }

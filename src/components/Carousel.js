@@ -1,44 +1,70 @@
 import React from 'react';
 import Slider from 'react-slick';
-import NextArrow from './NextArrow';
-import PrevArrow from './PrevArrow';
+// import NextArrow from './NextArrow';
+// import PrevArrow from './PrevArrow';
 
 class Carousel extends React.Component {
   render() {
     const settings = {
-      className: 'center',
       centerMode: true,
-      infinite: true,
-      centerPadding: '28%',
+      focusOnSelect: true,
+      centerPadding: '33%',
       slidesToShow: 1,
-      // autoplay: true,
-      speed: 500,
-      // prevArrow: <PrevArrow />,
-      // nextArrow: <NextArrow />,
+      dots: true,
       responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            className: 'breakpoint1',
+            arrows: false,
+            centerMode: true,
+            centerPadding: '25%',
+            slidesToShow: 1
+          }
+        },
+        {
+          breakpoint: 980,
+          settings: {
+            className: 'breakpoint2',
+            arrows: false,
+            centerMode: true,
+            centerPadding: '20%',
+            slidesToShow: 1
+          }
+        },
         {
           breakpoint: 768,
           settings: {
-            centerPadding: '10%',
+            className: 'breakpoint3',
+            arrows: false,
+            centerMode: true,
+            centerPadding: '15%',
             slidesToShow: 1
           }
         },
         {
-          breakpoint: 615,
+          breakpoint: 580,
           settings: {
-            centerPadding: '10%',
+            className: 'breakpoint4',
+            arrows: false,
+            centerMode: true,
+            centerPadding: 0,
             slidesToShow: 1
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 300,
           settings: {
-            centerPadding: '10px',
+            className: 'breakpoint6',
+            arrows: false,
+            centerMode: true,
+            centerPadding: 0,
             slidesToShow: 1
           }
         }
       ]
     };
+
     return (
       <Slider {...settings}>
         <div className="card">
