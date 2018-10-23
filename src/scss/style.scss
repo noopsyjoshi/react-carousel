@@ -62,19 +62,64 @@ h4 {
   margin: 20px;
 }
 
-.slick-slide .card img {
-  max-width: 368px;
-  max-height: 368px;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
+.card {
+    text-align: center;
+    height: 368px;
+    width: 368px !important;
+    position: relative;
+}
+
+.card-front {
+    max-width: 300px;
+    max-height: 300px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    z-index: 2;
+    position: absolute;
+    margin-top: 34px;
+    margin-left: 34px;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+
+.card-front img {
+    opacity: 0.8;
 }
 
 .card-text-top {
   position: absolute;
   top: 40%;
   width: 100%;
+  z-index:1000;
 }
+
+.card-text-bottom {
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    z-index: 1000;
+}
+
+.slick-slide .card img {
+    max-width: 368px;
+    max-height: 368px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    z-index: 2;
+    position: absolute;
+}
+
+
+.slick-slide .card img {
+  // max-width: 368px;
+  // max-height: 368px;
+  // width: 100%;
+  // height: 100%;
+  // margin: 0 auto;
+}
+
 
 .card-text-bottom {
   position: absolute;
@@ -110,6 +155,18 @@ h4 {
 
 .slick-slide.slick-active.slick-center {
     transform: scale(1.2);
+}
+
+.nextArrow {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+}
+
+.prevArrow {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
 }
 
 // .slick-list {
