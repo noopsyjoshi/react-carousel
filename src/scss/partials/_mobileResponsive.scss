@@ -1,0 +1,42 @@
+$break-small: 400px;
+
+@media screen and (max-width: $break-small) {
+
+  section {
+
+    h1 {
+      font-size: 1.4rem;
+      padding: 5px 0 5px 0;
+    }
+
+    .slick-slider {
+      padding-bottom: 45px;
+      .slick-list {
+        .slick-track {
+          padding: 0px;
+          margin: 0px;
+          .slick-slide {
+            margin: 0 !important;
+            div {
+              .card {
+                margin-left: -25px;
+              }
+            }
+          }
+
+          .slick-cloned {
+            visibility: hidden;
+          }
+
+          .slick-center {
+            transform: scale(0.8) !important;
+          }
+        }
+      }
+    }
+  }
+
+  [aria-hidden="true"] {
+    visibility: hidden;
+  }
+}

@@ -8,14 +8,15 @@ class Carousel extends React.Component {
     const settings = {
       centerMode: true,
       focusOnSelect: true,
-      centerPadding: '33%',
+      centerPadding: '32%',
       slidesToShow: 1,
       dots: true,
+      autoplay: true,
+      draggable: true,
       responsive: [
         {
-          breakpoint: 1200,
+          breakpoint: 1440,
           settings: {
-            className: 'breakpoint1',
             arrows: false,
             centerMode: true,
             centerPadding: '25%',
@@ -25,7 +26,6 @@ class Carousel extends React.Component {
         {
           breakpoint: 980,
           settings: {
-            className: 'breakpoint2',
             arrows: false,
             centerMode: true,
             centerPadding: '20%',
@@ -35,17 +35,15 @@ class Carousel extends React.Component {
         {
           breakpoint: 768,
           settings: {
-            className: 'breakpoint3',
             arrows: false,
             centerMode: true,
-            centerPadding: '15%',
+            centerPadding: '20%',
             slidesToShow: 1
           }
         },
         {
-          breakpoint: 580,
+          breakpoint: 646,
           settings: {
-            className: 'breakpoint4',
             arrows: false,
             centerMode: true,
             centerPadding: 0,
@@ -53,9 +51,8 @@ class Carousel extends React.Component {
           }
         },
         {
-          breakpoint: 300,
+          breakpoint: 320,
           settings: {
-            className: 'breakpoint6',
             arrows: false,
             centerMode: true,
             centerPadding: 0,
@@ -64,6 +61,22 @@ class Carousel extends React.Component {
         }
       ]
     };
+
+    // initially I tried using JS to hide the overlapping items, but then found it was easier to add a style for the attribute 'aria-hidden'
+
+    // function hideSlides() {
+    //   // check if it's mobile
+    //   const width = document.documentElement.clientWidth;
+    //   if( width <= 400 ) {
+    //     const slides = document.getElementsByClassName('slick-slide');
+    //     console.log(slides); // this returns an object of all elements
+    //
+    //     // iteratate through the object, check attributes, aria-hidden value is true
+    //     // if it's true then set the visibility to hidden
+    //   }
+    // }
+
+    // hideSlides();
 
     return (
       <Slider {...settings}>
@@ -89,7 +102,7 @@ class Carousel extends React.Component {
               <h3>Bahamas & caribbean</h3>
             </div>
             <div className="card-text-bottom">
-              <h4>View Itinerary</h4>
+              <a href="#"><h4>View Itinerary</h4></a>
             </div>
           </div>
         </div>
@@ -102,7 +115,7 @@ class Carousel extends React.Component {
               <h3>Bahamas & caribbean</h3>
             </div>
             <div className="card-text-bottom">
-              <h4>View Itinerary</h4>
+              <a href="#"><h4>View Itinerary</h4></a>
             </div>
           </div>
         </div>
@@ -115,7 +128,7 @@ class Carousel extends React.Component {
               <h3>Bahamas & caribbean</h3>
             </div>
             <div className="card-text-bottom">
-              <h4>View Itinerary</h4>
+              <a href="#"><h4>View Itinerary</h4></a>
             </div>
           </div>
         </div>
@@ -128,7 +141,7 @@ class Carousel extends React.Component {
               <h3>Bahamas & caribbean</h3>
             </div>
             <div className="card-text-bottom">
-              <h4>View Itinerary</h4>
+              <a href="#"><h4>View Itinerary</h4></a>
             </div>
           </div>
         </div>
@@ -141,7 +154,7 @@ class Carousel extends React.Component {
               <h3>Bahamas & caribbean</h3>
             </div>
             <div className="card-text-bottom">
-              <h4>View Itinerary</h4>
+              <a href="#"><h4>View Itinerary</h4></a>
             </div>
           </div>
         </div>
