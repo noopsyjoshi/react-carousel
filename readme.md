@@ -66,6 +66,7 @@ The sketch designs were provided to me. My task was to convert the designs into 
 <img src="src/assets/result1.png" alt="Output (Tablet) Screenshot" width="400px">
 
 2. The carousel on desktop
+
 <img src="src/assets/result2.png" alt="Output (Desktop) Screenshot" width="500px">
 
 3. The carousel on mobile
